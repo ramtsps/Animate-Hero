@@ -153,7 +153,7 @@ export default function ComingSoon({ title, description }: ComingSoonProps) {
     }
 
     return (
-        <div className="bg-white w-full mx-auto relative min-h-screen">
+        <div className="bg-white w-full mx-auto relative " style={{ height: "100vh" }}>
             {/* Header Section */}
             <section className="relative h-screen bg-white overflow-hidden flex flex-col items-center justify-center">
                 {/* Logo */}
