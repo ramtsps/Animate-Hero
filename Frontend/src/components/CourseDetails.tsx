@@ -5,6 +5,10 @@ import Header from "./Header";
 import Footer from "../imports/Footer";
 import imgTigerCalligraphy11Sid177 from "../assets/4307a49e690f6e0d5b4cc3f5e241fcaa2617c523.png";
 import { ContainerSid } from "../imports/HeroSectionSid171";
+import classPhoto1 from "figma:asset/8cc697d30d2be02662c7202d22efca79e3dee1c1.png";
+import classPhoto2 from "figma:asset/1d80dbd42779716e151bd12763c4342c5a87ad3b.png";
+import classPhoto3 from "figma:asset/0108c56a73d24a70bde527db59ed661b46bee587.png";
+import classPhoto4 from "figma:asset/7ed415331eae513d41186746f3ac11a88f113398.png";
 export default function CourseDetails() {
   const navigate = useNavigate();
 
@@ -121,13 +125,15 @@ export default function CourseDetails() {
                     Ages 6-12
                   </span>
                   <span className="bg-white text-[#FF8559] px-4 py-2 rounded-full border-2 border-[#FF8559]">
-                    12 Sessions
+                    8 Weeks
                   </span>
                 </div>
 
                 <p className="text-[#4a5565] text-xl max-w-3xl mb-6">
-                  A comprehensive painting course designed to unlock creativity and build fundamental art skills in a fun, supportive environment.
+                  A journey into acrylics where you’ll learn foundational techniques and grow your creative voice. From color mixing to composition, each step leads you toward finished paintings you’ll be proud of.
                 </p>
+
+
 
                 <div className="flex flex-wrap gap-6 items-center">
                   <div className="flex items-center gap-2">
@@ -177,6 +183,79 @@ export default function CourseDetails() {
               </motion.div>
             </div>
           </div>
+
+          {/* Continuous Scrolling Photo Gallery */}
+          <section className="mb-16 overflow-hidden">
+            <h2 className="text-[#101828] mb-8 font-semibold text-center" style={{ fontSize: "36px" }}>
+              Class Highlights
+            </h2>
+            <div className="relative">
+              {/* Scrolling container */}
+              <motion.div
+                className="flex gap-6"
+                animate={{
+                  x: [0, -2240],
+                }}
+                transition={{
+                  duration: 45,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+              >
+                {/* First set of images */}
+                <ScrollingImage 
+                  src={classPhoto1}
+                  alt="Student painting in art class"
+                />
+                <ScrollingImage 
+                  src={classPhoto2}
+                  alt="Kids showing their artwork"
+                />
+                <ScrollingImage 
+                  src={classPhoto3}
+                  alt="Student working on painting"
+                />
+                <ScrollingImage 
+                  src={classPhoto4}
+                  alt="Students painting together"
+                />
+                <ScrollingImage 
+                  src={classPhoto1}
+                  alt="Student painting in art class"
+                />
+                <ScrollingImage 
+                  src={classPhoto2}
+                  alt="Kids showing their artwork"
+                />
+                
+                {/* Duplicate set for seamless loop */}
+                <ScrollingImage 
+                  src={classPhoto3}
+                  alt="Student working on painting"
+                />
+                <ScrollingImage 
+                  src={classPhoto4}
+                  alt="Students painting together"
+                />
+                <ScrollingImage 
+                  src={classPhoto1}
+                  alt="Student painting in art class"
+                />
+                <ScrollingImage 
+                  src={classPhoto2}
+                  alt="Kids showing their artwork"
+                />
+                <ScrollingImage 
+                  src={classPhoto3}
+                  alt="Student working on painting"
+                />
+                <ScrollingImage 
+                  src={classPhoto4}
+                  alt="Students painting together"
+                />
+              </motion.div>
+            </div>
+          </section>
 
           {/* What Students Will Learn */}
           <section className="mb-16">
@@ -374,5 +453,17 @@ function SparkleIcon() {
       <circle cx="30" cy="10" r="1.5" fill="#FF8559" />
       <circle cx="30" cy="30" r="2" fill="#D1E231" />
     </svg>
+  );
+}
+
+function ScrollingImage({ src, alt }: { src: string, alt: string }) {
+  return (
+    <div className="relative shrink-0 w-80 h-80 rounded-2xl shadow-lg overflow-hidden border-4 border-white hover:scale-105 transition-transform">
+      <img 
+        src={src} 
+        alt={alt}
+        className="w-full h-full object-cover"
+      />
+    </div>
   );
 }

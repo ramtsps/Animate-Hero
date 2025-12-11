@@ -6,20 +6,10 @@ import imgPrimiyaAboutPhoto1 from "figma:asset/ee1fca0c7d7699b7ef50155560fabf3cd
 import imgBrushStroke1 from "figma:asset/2f11d2ca8e43ac3af786a4d36a6476912ed710a3.png";
 import imgBrushStrokeAboutUs41 from "figma:asset/9f7d9933a0b27e7e3384b71c2ce6becc718950dd.png";
 import imgImage from "figma:asset/267698921917187a8c7b48052763446f125148e1.png";
-import { motion } from "motion/react";
 
 function Container() {
   return (
-    <motion.div 
-      className="[grid-area:3_/_1] bg-[#fff5f0] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px] cursor-pointer" 
-      data-name="Container"
-      whileHover={{ 
-        scale: 1.03, 
-        y: -4,
-        boxShadow: "0px 12px 24px -4px rgba(255, 133, 89, 0.15), 0px 4px 8px -2px rgba(255, 133, 89, 0.08)"
-      }}
-      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-    >
+    <div className="[grid-area:3_/_1] bg-[#fff5f0] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px]" data-name="Container">
       <div aria-hidden="true" className="absolute border border-[#ff8559] border-solid inset-0 pointer-events-none rounded-[20px]" />
       <div className="h-[48px] relative shrink-0 w-[32px]" data-name="AboutUs">
         <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border h-[48px] relative w-[32px]">
@@ -31,7 +21,7 @@ function Container() {
           <p className="absolute font-['Montserrat:Regular',sans-serif] font-normal leading-[28px] left-0 text-[#4a5565] text-[18px] text-nowrap top-[8.5px] whitespace-pre">Strengthen emotional awareness and empathy</p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
@@ -67,7 +57,7 @@ function Container2() {
 
 function ImagePrimiyasArtAcademy() {
   return (
-    <div className="absolute h-[74px] left-[54px] top-[44px] w-[341px]" data-name="Image (Primiya's Art Academy)">
+    <div className="absolute h-[74px] left-[54px] top-[44px] w-[341px]" data-name="Image (Primiya\'s Art Academy)">
       <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgImagePrimiyasArtAcademy} />
     </div>
   );
@@ -75,21 +65,9 @@ function ImagePrimiyasArtAcademy() {
 
 function ButtonNav() {
   return (
-    <motion.div 
-      className="absolute h-[24px] left-[0.6px] top-[7.5px] w-[43.797px] cursor-pointer" 
-      data-name="ButtonNav"
-      onClick={() => (window as any).navigateTo?.("home")}
-      whileHover={{ y: -2 }}
-      transition={{ duration: 0.2 }}
-    >
-      <motion.p 
-        className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[24px] left-[22.5px] not-italic text-[#364153] text-[16px] text-center text-nowrap top-[-1px] tracking-[-0.3125px] translate-x-[-50%] whitespace-pre"
-        whileHover={{ scale: 1.05, color: "#101828" }}
-        transition={{ duration: 0.2 }}
-      >
-        Home
-      </motion.p>
-    </motion.div>
+    <div className="absolute h-[24px] left-[0.6px] top-[7.5px] w-[43.797px]" data-name="ButtonNav">
+      <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[24px] left-[22.5px] not-italic text-[#364153] text-[16px] text-center text-nowrap top-[-1px] tracking-[-0.3125px] translate-x-[-50%] whitespace-pre">Home</p>
+    </div>
   );
 }
 
@@ -103,47 +81,17 @@ function Paragraph1() {
 
 function LinkNav() {
   return (
-    <motion.div 
-      className="absolute box-border content-stretch flex flex-col h-[24px] items-start left-[75.14px] pb-0 pl-0 top-[8px] w-[69.938px] cursor-pointer" 
-      data-name="LinkNav"
-      onClick={() => (window as any).navigateTo?.("programs")}
-      whileHover={{ y: -2 }}
-      transition={{ duration: 0.2 }}
-    >
-      <motion.div 
-        className="h-[24px] relative shrink-0 w-full"
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.2 }}
-      >
-        <motion.p 
-          className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[24px] left-0 not-italic text-[#364153] text-[16px] text-nowrap top-[-1px] tracking-[-0.3125px] whitespace-pre"
-          whileHover={{ color: "#101828" }}
-          transition={{ duration: 0.2 }}
-        >
-          Programs
-        </motion.p>
-      </motion.div>
-    </motion.div>
+    <div className="absolute box-border content-stretch flex flex-col h-[24px] items-start left-[75.14px] pb-0 pl-0 top-[8px] w-[69.938px]" data-name="LinkNav">
+      <Paragraph1 />
+    </div>
   );
 }
 
 function LinkNav1() {
   return (
-    <motion.div 
-      className="absolute h-[24px] left-[177.48px] top-[7.5px] w-[66.188px] cursor-pointer" 
-      data-name="LinkNav2"
-      onClick={() => (window as any).navigateTo?.("products")}
-      whileHover={{ y: -2 }}
-      transition={{ duration: 0.2 }}
-    >
-      <motion.p 
-        className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[24px] left-[33.5px] not-italic text-[#364153] text-[16px] text-center text-nowrap top-[-1px] tracking-[-0.3125px] translate-x-[-50%] whitespace-pre"
-        whileHover={{ scale: 1.05, color: "#101828" }}
-        transition={{ duration: 0.2 }}
-      >
-        Products
-      </motion.p>
-    </motion.div>
+    <div className="absolute h-[24px] left-[177.48px] top-[7.5px] w-[66.188px]" data-name="LinkNav2">
+      <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[24px] left-[33.5px] not-italic text-[#364153] text-[16px] text-center text-nowrap top-[-1px] tracking-[-0.3125px] translate-x-[-50%] whitespace-pre">Products</p>
+    </div>
   );
 }
 
@@ -157,27 +105,9 @@ function Paragraph2() {
 
 function LinkNav2() {
   return (
-    <motion.div 
-      className="absolute box-border content-stretch flex flex-col h-[24px] items-start left-[274.35px] pb-0 pl-0 top-[8px] w-[89.938px] cursor-pointer" 
-      data-name="LinkNav3"
-      onClick={() => (window as any).navigateTo?.("testimonials")}
-      whileHover={{ y: -2 }}
-      transition={{ duration: 0.2 }}
-    >
-      <motion.div 
-        className="h-[24px] relative shrink-0 w-full"
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.2 }}
-      >
-        <motion.p 
-          className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[24px] left-0 not-italic text-[#364153] text-[16px] text-nowrap top-[-1px] tracking-[-0.3125px] whitespace-pre"
-          whileHover={{ color: "#101828" }}
-          transition={{ duration: 0.2 }}
-        >
-          Testimonials
-        </motion.p>
-      </motion.div>
-    </motion.div>
+    <div className="absolute box-border content-stretch flex flex-col h-[24px] items-start left-[274.35px] pb-0 pl-0 top-[8px] w-[89.938px]" data-name="LinkNav3">
+      <Paragraph2 />
+    </div>
   );
 }
 
@@ -238,7 +168,7 @@ function AboutUs() {
 function AboutUs1() {
   return (
     <div className="absolute h-[64px] left-0 top-[144px] w-[856px]" data-name="AboutUs">
-      <p className="absolute font-['Montserrat:Regular',sans-serif] font-normal leading-[32px] left-0 text-[#4a5565] text-[18px] top-[0.5px] w-[834px]">{`Primiya's journey began not with a gallery, but with a classroom. As both an artist and a teacher, she saw firsthand how art could unlock a child's imagination, build resilience, and foster emotional intelligence.Her passion for nurturing creativity led her to create a space where children could not only learn techniques—but discover themselves. From sketching in notebooks to mentoring students, Primiya's philosophy has always been simple:`}</p>
+      <p className="absolute font-['Montserrat:Regular',sans-serif] font-normal leading-[32px] left-0 text-[#4a5565] text-[18px] top-[0.5px] w-[834px]">{`Primiya's journey began not with a gallery, but with a classroom. As both an artist and a teacher, she saw firsthand how art could unlock a child's imagination, build resilience, and foster emotional intelligence.Her passion for nurturing creativity led her to create a space where children could not only learn techniques—but discover themselves. From sketching in notebooks to mentoring students, Primiya’s philosophy has always been simple:`}</p>
     </div>
   );
 }
@@ -331,20 +261,11 @@ function AboutUs4() {
 
 function Container4() {
   return (
-    <motion.div 
-      className="[grid-area:1_/_1] bg-[#fff5f0] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px] cursor-pointer" 
-      data-name="Container"
-      whileHover={{ 
-        scale: 1.03, 
-        y: -4,
-        boxShadow: "0px 12px 24px -4px rgba(255, 133, 89, 0.15), 0px 4px 8px -2px rgba(255, 133, 89, 0.08)"
-      }}
-      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-    >
+    <div className="[grid-area:1_/_1] bg-[#fff5f0] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px]" data-name="Container">
       <div aria-hidden="true" className="absolute border border-[#ff8559] border-solid inset-0 pointer-events-none rounded-[20px]" />
       <AboutUs3 />
       <AboutUs4 />
-    </motion.div>
+    </div>
   );
 }
 
@@ -370,20 +291,11 @@ function AboutUs6() {
 
 function Container5() {
   return (
-    <motion.div 
-      className="[grid-area:1_/_2] bg-[#f9ffed] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px] cursor-pointer" 
-      data-name="Container"
-      whileHover={{ 
-        scale: 1.03, 
-        y: -4,
-        boxShadow: "0px 12px 24px -4px rgba(209, 226, 49, 0.15), 0px 4px 8px -2px rgba(209, 226, 49, 0.08)"
-      }}
-      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-    >
+    <div className="[grid-area:1_/_2] bg-[#f9ffed] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px]" data-name="Container">
       <div aria-hidden="true" className="absolute border border-[#a0b009] border-solid inset-0 pointer-events-none rounded-[20px]" />
       <AboutUs5 />
       <AboutUs6 />
-    </motion.div>
+    </div>
   );
 }
 
@@ -409,20 +321,11 @@ function AboutUs8() {
 
 function Container6() {
   return (
-    <motion.div 
-      className="[grid-area:2_/_1] bg-[#fff5f0] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px] cursor-pointer" 
-      data-name="Container"
-      whileHover={{ 
-        scale: 1.03, 
-        y: -4,
-        boxShadow: "0px 12px 24px -4px rgba(255, 133, 89, 0.15), 0px 4px 8px -2px rgba(255, 133, 89, 0.08)"
-      }}
-      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-    >
+    <div className="[grid-area:2_/_1] bg-[#fff5f0] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px]" data-name="Container">
       <div aria-hidden="true" className="absolute border border-[#ff8559] border-solid inset-0 pointer-events-none rounded-[20px]" />
       <AboutUs7 />
       <AboutUs8 />
-    </motion.div>
+    </div>
   );
 }
 
@@ -448,20 +351,11 @@ function AboutUs10() {
 
 function Container7() {
   return (
-    <motion.div 
-      className="[grid-area:2_/_2] bg-[#f9ffed] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px] cursor-pointer" 
-      data-name="Container"
-      whileHover={{ 
-        scale: 1.03, 
-        y: -4,
-        boxShadow: "0px 12px 24px -4px rgba(209, 226, 49, 0.15), 0px 4px 8px -2px rgba(209, 226, 49, 0.08)"
-      }}
-      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-    >
+    <div className="[grid-area:2_/_2] bg-[#f9ffed] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px]" data-name="Container">
       <div aria-hidden="true" className="absolute border border-[#a0b009] border-solid inset-0 pointer-events-none rounded-[20px]" />
       <AboutUs9 />
       <AboutUs10 />
-    </motion.div>
+    </div>
   );
 }
 
@@ -487,20 +381,11 @@ function AboutUs12() {
 
 function Container9() {
   return (
-    <motion.div 
-      className="[grid-area:3_/_2] bg-[#f9ffed] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px] cursor-pointer" 
-      data-name="Container"
-      whileHover={{ 
-        scale: 1.03, 
-        y: -4,
-        boxShadow: "0px 12px 24px -4px rgba(209, 226, 49, 0.15), 0px 4px 8px -2px rgba(209, 226, 49, 0.08)"
-      }}
-      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-    >
+    <div className="[grid-area:3_/_2] bg-[#f9ffed] box-border content-stretch flex gap-[16px] items-start pb-px pl-[25px] pr-px pt-[25px] relative rounded-[20px] self-stretch shrink-0 w-[513px]" data-name="Container">
       <div aria-hidden="true" className="absolute border border-[#a0b009] border-solid inset-0 pointer-events-none rounded-[20px]" />
       <AboutUs11 />
       <AboutUs12 />
-    </motion.div>
+    </div>
   );
 }
 
@@ -582,21 +467,12 @@ function AboutUs15() {
 
 function Container11() {
   return (
-    <motion.div 
-      className="[grid-area:1_/_1] bg-white place-self-stretch relative rounded-[24px] shrink-0 cursor-pointer" 
-      data-name="Container"
-      whileHover={{ 
-        scale: 1.04, 
-        y: -6,
-        boxShadow: "0px 16px 32px -6px rgba(255, 133, 89, 0.2), 0px 6px 12px -3px rgba(255, 133, 89, 0.12)"
-      }}
-      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-    >
+    <div className="[grid-area:1_/_1] bg-white place-self-stretch relative rounded-[24px] shrink-0" data-name="Container">
       <div aria-hidden="true" className="absolute border border-[#ff8559] border-solid inset-0 pointer-events-none rounded-[24px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]" />
       <AboutUs13 />
       <AboutUs14 />
       <AboutUs15 />
-    </motion.div>
+    </div>
   );
 }
 
@@ -636,21 +512,12 @@ function AboutUs18() {
 
 function Container12() {
   return (
-    <motion.div 
-      className="[grid-area:1_/_2] bg-white place-self-stretch relative rounded-[24px] shrink-0 cursor-pointer" 
-      data-name="Container"
-      whileHover={{ 
-        scale: 1.04, 
-        y: -6,
-        boxShadow: "0px 16px 32px -6px rgba(209, 226, 49, 0.2), 0px 6px 12px -3px rgba(209, 226, 49, 0.12)"
-      }}
-      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-    >
+    <div className="[grid-area:1_/_2] bg-white place-self-stretch relative rounded-[24px] shrink-0" data-name="Container">
       <div aria-hidden="true" className="absolute border border-[#a0b009] border-solid inset-[-0.5px] pointer-events-none rounded-[24.5px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]" />
       <AboutUs16 />
       <AboutUs17 />
       <AboutUs18 />
-    </motion.div>
+    </div>
   );
 }
 
@@ -690,21 +557,12 @@ function AboutUs21() {
 
 function Container13() {
   return (
-    <motion.div 
-      className="[grid-area:1_/_3] bg-white place-self-stretch relative rounded-[24px] shrink-0 cursor-pointer" 
-      data-name="Container"
-      whileHover={{ 
-        scale: 1.04, 
-        y: -6,
-        boxShadow: "0px 16px 32px -6px rgba(255, 133, 89, 0.2), 0px 6px 12px -3px rgba(255, 133, 89, 0.12)"
-      }}
-      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-    >
+    <div className="[grid-area:1_/_3] bg-white place-self-stretch relative rounded-[24px] shrink-0" data-name="Container">
       <div aria-hidden="true" className="absolute border border-[#ff8559] border-solid inset-0 pointer-events-none rounded-[24px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]" />
       <AboutUs19 />
       <AboutUs20 />
       <AboutUs21 />
-    </motion.div>
+    </div>
   );
 }
 
@@ -744,21 +602,12 @@ function AboutUs24() {
 
 function Container14() {
   return (
-    <motion.div 
-      className="[grid-area:1_/_4] bg-white place-self-stretch relative rounded-[24px] shrink-0 cursor-pointer" 
-      data-name="Container"
-      whileHover={{ 
-        scale: 1.04, 
-        y: -6,
-        boxShadow: "0px 16px 32px -6px rgba(209, 226, 49, 0.2), 0px 6px 12px -3px rgba(209, 226, 49, 0.12)"
-      }}
-      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-    >
+    <div className="[grid-area:1_/_4] bg-white place-self-stretch relative rounded-[24px] shrink-0" data-name="Container">
       <div aria-hidden="true" className="absolute border border-[#a0b009] border-solid inset-0 pointer-events-none rounded-[24px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]" />
       <AboutUs22 />
       <AboutUs23 />
       <AboutUs24 />
-    </motion.div>
+    </div>
   );
 }
 
@@ -877,18 +726,9 @@ function Paragraph11() {
 
 function Button() {
   return (
-    <motion.div 
-      className="absolute bg-[#d1e231] h-[67px] left-[259.12px] rounded-[1.67772e+07px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] top-[180px] w-[281.758px] cursor-pointer" 
-      data-name="Button"
-      whileHover={{ 
-        scale: 1.05,
-        boxShadow: "0px 16px 24px -4px rgba(209, 226, 49, 0.25), 0px 8px 12px -6px rgba(209, 226, 49, 0.15)"
-      }}
-      whileTap={{ scale: 0.98 }}
-      transition={{ duration: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
-    >
-      <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[27px] left-[141px] not-italic text-[18px] text-center text-nowrap text-black top-[20.5px] translate-x-[-50%] whitespace-pre">Explore Our Programs</p>
-    </motion.div>
+    <div className="absolute bg-[#ff8559] h-[67px] left-[259.12px] rounded-[1.67772e+07px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] top-[180px] w-[281.758px]" data-name="Button">
+      <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[27px] left-[141px] not-italic text-[18px] text-center text-nowrap text-white top-[20.5px] translate-x-[-50%] whitespace-pre">Explore Our Programs</p>
+    </div>
   );
 }
 
@@ -1180,7 +1020,7 @@ function Icon3() {
 
 function Icon7() {
   return (
-    <div className="absolute content-stretch flex flex-col items-start left-[10px] size-[20px] top-[10px]" data-name="Icon26">
+    <div className="absolute content-stretch flex flex-col items-start left-[10px] size-[20px] top-[10px]" data-name="Icon18">
       <Icon3 />
     </div>
   );
@@ -1188,7 +1028,7 @@ function Icon7() {
 
 function Container23() {
   return (
-    <div className="absolute bg-[#1e2939] left-[56px] rounded-[1.67772e+07px] size-[40px] top-0" data-name="Container53">
+    <div className="absolute bg-[#1e2939] left-[56px] rounded-[1.67772e+07px] size-[40px] top-0" data-name="Container43">
       <Icon7 />
     </div>
   );
@@ -1239,7 +1079,7 @@ function Icon5() {
 
 function Icon8() {
   return (
-    <div className="absolute content-stretch flex flex-col items-start left-[10px] size-[20px] top-[10px]" data-name="Icon34">
+    <div className="absolute content-stretch flex flex-col items-start left-[10px] size-[20px] top-[10px]" data-name="Icon18">
       <Icon5 />
     </div>
   );
@@ -1247,7 +1087,7 @@ function Icon8() {
 
 function Container24() {
   return (
-    <div className="absolute bg-[#1e2939] left-[112px] rounded-[1.67772e+07px] size-[40px] top-0" data-name="Container63">
+    <div className="absolute bg-[#1e2939] left-[112px] rounded-[1.67772e+07px] size-[40px] top-0" data-name="Container43">
       <Icon8 />
     </div>
   );
@@ -1255,7 +1095,7 @@ function Container24() {
 
 function Container25() {
   return (
-    <div className="absolute h-[40px] left-0 top-[40px] w-[152px]" data-name="Container73">
+    <div className="absolute h-[40px] left-0 top-[40px] w-[272px]" data-name="Container52">
       <Container22 />
       <Container23 />
       <Container24 />
@@ -1265,7 +1105,7 @@ function Container25() {
 
 function Container26() {
   return (
-    <div className="[grid-area:1_/_4] place-self-stretch relative shrink-0" data-name="Container113">
+    <div className="[grid-area:1_/_4] place-self-stretch relative shrink-0" data-name="Container63">
       <Heading7 />
       <Container25 />
     </div>
@@ -1274,7 +1114,7 @@ function Container26() {
 
 function Container27() {
   return (
-    <div className="gap-[28px] grid grid-cols-[repeat(4,_minmax(0px,_1fr))] grid-rows-[repeat(1,_minmax(0px,_1fr))] h-[168px] overflow-clip relative shrink-0 w-full" data-name="Container213">
+    <div className="absolute bg-[#101828] box-border gap-[48px] grid grid-cols-[repeat(4,_minmax(0px,_1fr))] grid-rows-[repeat(1,_minmax(0px,_1fr))] h-[372px] left-0 px-[248px] py-[106px] top-[3656px] w-[1728px]" data-name="Container73">
       <Container28 />
       <Container20 />
       <Container21 />
@@ -1283,42 +1123,24 @@ function Container27() {
   );
 }
 
-function Paragraph12() {
+function AboutUs26() {
   return (
-    <div className="h-[23px] relative shrink-0 w-full" data-name="Paragraph23">
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[23px] left-[864.36px] text-[#99a1af] text-[14.93px] text-center text-nowrap top-0 tracking-[-0.2921px] translate-x-[-50%] whitespace-pre">© 2024 Primiya's Art Academy. All rights reserved.</p>
-    </div>
-  );
-}
-
-function Container29() {
-  return (
-    <div className="box-border content-stretch flex flex-col gap-[28px] items-start pb-0 pt-[32px] px-0 relative shrink-0 w-full" data-name="Container310">
-      <div aria-hidden="true" className="absolute border-[#344155] border-solid border-t-0 border-x-0 border-b h-0 left-0 top-0 w-full" />
-      <Container27 />
-      <Paragraph12 />
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <div className="absolute bg-[#0c1221] box-border h-[351px] left-0 pb-[40px] pt-[48px] px-[132px] top-[3656px] w-[1728px]" data-name="Footer">
-      <Container29 />
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <div className="bg-white h-[4007px] relative w-[1728px]" data-name="App">
+    <div className="absolute bg-white h-[4028px] left-0 top-0 w-[1728px]" data-name="AboutUs">
       <Section />
       <Section1 />
       <Section2 />
       <Section3 />
       <Section4 />
       <Section5 />
-      <Footer />
+      <Container27 />
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div className="absolute h-[4028px] left-0 overflow-clip top-0 w-[1728px]" data-name="App">
+      <AboutUs26 />
     </div>
   );
 }

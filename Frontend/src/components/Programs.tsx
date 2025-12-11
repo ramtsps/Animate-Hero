@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 import imgTigerCalligraphy11Sid177 from "../assets/4307a49e690f6e0d5b4cc3f5e241fcaa2617c523.png";
 import { ContainerSid } from "../imports/HeroSectionSid171";
-import Screen7 from "../imports/Screen8";
+import Screen7 from "../imports/Screen7";
 import Footer from "../imports/Footer";
 export default function Programs() {
     const navigate = useNavigate();

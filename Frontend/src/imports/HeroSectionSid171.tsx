@@ -115,7 +115,7 @@ function TextSid1() {
       className="absolute h-[90px] left-[871px] top-[303px] w-[592px]"
       data-name="Text_sid_1:109"
     >
-      <p className="absolute font-['Kaushan_Script',cursive] leading-[90px] left-0 not-italic font-bold text-[#101828] text-[96px] text-nowrap top-[1.5px] tracking-[0.123px] whitespace-pre">{`the Lines with`}</p>
+      <p className="absolute  leading-[90px] left-0 not-italic font-bold text-[#101828] text-[96px] text-nowrap top-[1.5px] tracking-[0.123px] whitespace-pre">{`the Lines with`}</p>
     </div>
   );
 }
@@ -137,12 +137,17 @@ function ParagraphSid() {
       className="absolute h-[84px] left-[871px] top-[493px] w-[576px]"
       data-name="Paragraph_sid_1:114"
     >
-      <p className="absolute font-['Montserrat:Regular',sans-serif] font-normal leading-[28px] left-0 text-[#4a5565] text-[20px] top-0 tracking-[-0.4492px] w-[532px]" style={{
-        fontSize: "25px",
-        lineHeight: "32px",
-        letterSpacing: "1px"
-      }}>
-        Art for wildly imaginative minds. Inside the lines or outside them—what matters is exploring, experimenting, and expressing.
+      <p
+        className="absolute font-['Montserrat:Regular',sans-serif] font-normal leading-[28px] left-0 text-[#4a5565] text-[20px] top-0 tracking-[-0.4492px] w-[532px]"
+        style={{
+          fontSize: "25px",
+          lineHeight: "32px",
+          letterSpacing: "1px",
+        }}
+      >
+        Art for wildly imaginative minds. Inside the lines or
+        outside them—what matters is exploring, experimenting,
+        and expressing.
       </p>
     </div>
   );
@@ -165,7 +170,7 @@ function ButtonSid1() {
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border relative">
         <motion.p
-          className={`font-['Inter:Bold',sans-serif] font-bold ${isActive ? 'text-white' : 'text-[#364153]'} leading-[28px] not-italic text-[20px] text-center text-nowrap tracking-[-0.3125px] whitespace-pre`}
+          className={`font-['Inter:Bold',sans-serif] font-bold ${isActive ? "text-white" : "text-[#364153]"} leading-[28px] not-italic text-[20px] text-center text-nowrap tracking-[-0.3125px] whitespace-pre`}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
         >
@@ -191,8 +196,11 @@ function LinkSid() {
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border relative">
         <motion.p
-          className={`font-['Inter:Bold',sans-serif] font-bold ${isActive ? 'text-[#FF8559]' : 'text-[#364153]'} leading-[28px] not-italic text-[20px] text-nowrap tracking-[-0.3125px] whitespace-pre`}
-          whileHover={{ scale: 1.05, color: isActive ? "#FF8559" : "#101828" }}
+          className={`font-['Inter:Bold',sans-serif] font-bold ${isActive ? "text-[#FF8559]" : "text-[#364153]"} leading-[28px] not-italic text-[20px] text-nowrap tracking-[-0.3125px] whitespace-pre`}
+          whileHover={{
+            scale: 1.05,
+            color: isActive ? "#FF8559" : "#101828",
+          }}
           transition={{ duration: 0.2 }}
         >
           Programs
@@ -217,8 +225,11 @@ function ButtonSid2() {
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border relative">
         <motion.p
-          className={`font-['Inter:Bold',sans-serif] font-bold ${isActive ? 'text-[#FF8559]' : 'text-[#364153]'} leading-[28px] not-italic text-[20px] text-center text-nowrap tracking-[-0.3125px] whitespace-pre`}
-          whileHover={{ scale: 1.05, color: isActive ? "#FF8559" : "#101828" }}
+          className={`font-['Inter:Bold',sans-serif] font-bold ${isActive ? "text-[#FF8559]" : "text-[#364153]"} leading-[28px] not-italic text-[20px] text-center text-nowrap tracking-[-0.3125px] whitespace-pre`}
+          whileHover={{
+            scale: 1.05,
+            color: isActive ? "#FF8559" : "#101828",
+          }}
           transition={{ duration: 0.2 }}
         >
           Products
@@ -243,8 +254,11 @@ function LinkSid1() {
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border relative">
         <motion.p
-          className={`font-['Inter:Bold',sans-serif] font-bold ${isActive ? 'text-[#FF8559]' : 'text-[#364153]'} leading-[28px] not-italic text-[20px] text-nowrap tracking-[-0.3125px] whitespace-pre`}
-          whileHover={{ scale: 1.05, color: isActive ? "#FF8559" : "#101828" }}
+          className={`font-['Inter:Bold',sans-serif] font-bold ${isActive ? "text-[#FF8559]" : "text-[#364153]"} leading-[28px] not-italic text-[20px] text-nowrap tracking-[-0.3125px] whitespace-pre`}
+          whileHover={{
+            scale: 1.05,
+            color: isActive ? "#FF8559" : "#101828",
+          }}
           transition={{ duration: 0.2 }}
         >
           Testimonials
@@ -269,8 +283,11 @@ function LinkSid2() {
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border relative">
         <motion.p
-          className={`font-['Inter:Bold',sans-serif] font-bold ${isActive ? 'text-[#FF8559]' : 'text-[#364153]'} leading-[28px] not-italic text-[20px] text-nowrap tracking-[-0.3125px] whitespace-pre`}
-          whileHover={{ scale: 1.05, color: isActive ? "#FF8559" : "#101828" }}
+          className={`font-['Inter:Bold',sans-serif] font-bold ${isActive ? "text-[#FF8559]" : "text-[#364153]"} leading-[28px] not-italic text-[20px] text-nowrap tracking-[-0.3125px] whitespace-pre`}
+          whileHover={{
+            scale: 1.05,
+            color: isActive ? "#FF8559" : "#101828",
+          }}
           transition={{ duration: 0.2 }}
         >
           About Us
@@ -309,7 +326,15 @@ function ContainerSid() {
     </div>
   );
 }
-export { ButtonSid1, ButtonSid2, ContainerSid, LinkSid, LinkSid1, LinkSid2, ButtonSid3 };
+export {
+  ButtonSid1,
+  ButtonSid2,
+  ContainerSid,
+  LinkSid,
+  LinkSid1,
+  LinkSid2,
+  ButtonSid3,
+};
 export default function HeroSectionSid() {
   return (
     <div
@@ -496,7 +521,6 @@ export default function HeroSectionSid() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-
       >
         <motion.div
           className="flex-none rotate-[231.576deg]"

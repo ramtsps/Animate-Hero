@@ -1,5 +1,5 @@
 {
-      "name": "Animate Hero Section Elements (Copy) (Copy) (Copy) (Copy)",
+      "name": "Animate Hero Section Elements (Copy) (Copy)",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -42,7 +42,7 @@
             "react-dom": "^18.3.1",
             "react-hook-form": "^7.55.0",
             "react-resizable-panels": "^2.1.7",
-            "react-router-dom": "^7.10.1",
+            "react-router-dom": "*",
             "recharts": "^2.15.2",
             "sonner": "^2.0.3",
             "tailwind-merge": "*",
@@ -50,12 +50,12 @@
       },
       "devDependencies": {
             "@types/node": "^20.10.0",
-            "@types/react-dom": "^19.2.3",
+            "@types/react": "^19.2.7",
             "@vitejs/plugin-react-swc": "^3.10.2",
             "vite": "6.3.5"
       },
       "scripts": {
-            "dev": "vite --host",
+            "dev": "vite",
             "build": "vite build"
       }
 }

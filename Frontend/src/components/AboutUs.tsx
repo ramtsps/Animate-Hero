@@ -1,6 +1,6 @@
 import imgTigerCalligraphy11Sid177 from "../assets/4307a49e690f6e0d5b4cc3f5e241fcaa2617c523.png";
 import Footer from "../imports/Footer";
-import imgPrimiyaAboutPhoto1 from "../assets/ee1fca0c7d7699b7ef50155560fabf3cdd6b17a7.png";
+import imgPrimiyaAboutPhoto1 from "../assets/5aac94983ec796da7645de8d5a7e682ec4fda45c.png";
 import { motion } from "motion/react";
 import React from "react";
 
@@ -139,8 +139,10 @@ function LinkNav4() {
 }
 
 export default function AboutUs() {
+  const navigate = useNavigate();
+
   return (
-    <div className="bg-white w-full mx-auto relative">
+    <div className="bg-white w-full mx-auto relative overflow-hidden">
       {/* Header Section */}
       <section className="relative h-[375px] bg-white overflow-hidden" style={{ height: '475px' }}>
         {/* Logo */}
@@ -222,7 +224,8 @@ export default function AboutUs() {
 
             {/* Decorative accent */}
             <motion.div
-              className="w-[300px] h-[380px]   relative"
+              className="w-[420px] h-[540px]   relative"
+
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
@@ -447,6 +450,7 @@ export default function AboutUs() {
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.3 }}
             viewport={{ once: true }}
+            onClick={() => navigate("/programs")}
           >
             Explore Our Programs
           </motion.button>
@@ -454,9 +458,9 @@ export default function AboutUs() {
       </section>
 
       {/* Footer */}
-      <div className="h-[358px]">
-        <Footer />
-      </div>
+
+      <Footer />
+
     </div>
   );
 }

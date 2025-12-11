@@ -81,7 +81,7 @@ function Icon() {
           />
         </g>
       </svg>
-    </div >
+    </div>
   );
 }
 
@@ -94,7 +94,7 @@ function Container1() {
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border h-[20px] relative w-auto flex items-center">
         <Icon />
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] ml-[12px] not-italic text-[#6a7282] text-[16px] text-nowrap tracking-[-0.1504px] whitespace-pre">
-          8-week program
+          8 Weeks
         </p>
       </div>
     </div>
@@ -164,7 +164,6 @@ function Container2() {
       data-name="Container"
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border h-[20px] relative w-auto flex items-center">
-
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] ml-[12px] not-italic text-[#6a7282] text-[16px] text-nowrap tracking-[-0.1504px] whitespace-pre">
           $120-$180
         </p>
@@ -192,8 +191,8 @@ function Paragraph() {
       data-name="Paragraph"
     >
       <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[24px] left-0 not-italic text-[#4a5565] text-[18px] top-0 tracking-[-0.3125px] w-[365px]">
-        Learn essential painting techniques with acrylics and
-        watercolors. Perfect for beginners ages 6-12.
+        A journey into acrylics where you’ll learn foundational
+        techniques and grow your creative voice.
       </p>
     </div>
   );
@@ -202,7 +201,7 @@ function Paragraph() {
 function Icon2() {
   return (
     <div
-      className="absolute left-[94.7px] size-[20px] top-[14px]"
+      className="size-[20px] shrink-0"
       data-name="Icon"
     >
       <svg
@@ -231,11 +230,11 @@ function Button() {
   return (
     <div
       onClick={() => navigate("/course-details")}
-      className="absolute bg-[#FF8559] h-[48px] left-[12px] rounded-[1.67772e+07px] top-[129px] w-[131px] cursor-pointer"
+      className="absolute bg-[#FF8559] h-[48px] left-1/2 -translate-x-1/2 rounded-[1.67772e+07px] top-[129px] w-[131px] cursor-pointer flex items-center justify-center gap-2"
       data-name="Button"
       style={{ marginTop: "12px" }}
     >
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[24px] left-[57.5px] not-italic text-[16px] text-center text-nowrap text-white top-[12px] tracking-[-0.3125px] translate-x-[-50%] whitespace-pre cursor-pointer">{`Explore `}</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-white tracking-[-0.3125px] whitespace-pre cursor-pointer">{`Explore`}</p>
       <Icon2 />
     </div>
   );
@@ -291,7 +290,7 @@ function PaintingEssentials() {
           }}
           transition={{
             duration: 0.4,
-            ease: [0.40, 1.56, 0.64, 1],
+            ease: [0.4, 1.56, 0.64, 1],
           }}
         >
           <motion.img
@@ -308,8 +307,6 @@ function PaintingEssentials() {
 
       <Container4 />
 
-
-
       {/* Main "Painting Essentials" image - rotates and scales on hover */}
       <motion.div
         className="absolute flex items-center justify-center"
@@ -321,7 +318,6 @@ function PaintingEssentials() {
             left: 32.82,
             top: 34.1,
           },
-
         }}
         style={
           {
@@ -445,8 +441,6 @@ function Container6() {
   );
 }
 
-
-
 function Container7() {
   return (
     <div
@@ -454,7 +448,6 @@ function Container7() {
       data-name="Container"
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border h-[20px] relative w-auto flex items-center">
-
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] ml-[12px] not-italic text-[#6a7282] text-[16px] text-nowrap tracking-[-0.1504px] whitespace-pre">
           $110-$160
         </p>
@@ -609,7 +602,7 @@ function WatercolorMagic() {
     >
       {/* Animated background container */}
       <div
-        className="absolute h-[226px] left-[100px] overflow-clip rounded-[24px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] top-[70px] w-[389px]"
+        className="absolute h-[226px] left-[100px] overflow-clip rounded-[24px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] top-[60px] w-[389px]"
         data-name="Container"
         style={{
           backgroundImage:
@@ -641,13 +634,11 @@ function WatercolorMagic() {
       </div>
 
       <div
-        className="absolute h-[268px] left-[100px] top-[294px] w-[389.328px]"
+        className="absolute h-[268px] left-[100px] top-[284px] w-[389.328px]"
         data-name="Container"
       >
         <Container8 />
         <Paragraph1 />
-
-
 
         {/* Main image - rotates on hover */}
         <motion.div
@@ -706,7 +697,7 @@ function WatercolorMagic() {
 function Container10() {
   return (
     <div
-      className="absolute h-[226px] left-[89px] overflow-clip rounded-[24px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] top-[49px] w-[389px]"
+      className="absolute h-[226px] left-[89px] overflow-clip rounded-[24px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] top-[60px] w-[389px]"
       data-name="Container"
       style={{
         backgroundImage:
@@ -853,7 +844,6 @@ function Container12() {
       data-name="Container"
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border h-[20px] relative w-auto flex items-center">
-
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] ml-[12px] not-italic text-[#6a7282] text-[16px] text-nowrap tracking-[-0.1504px] whitespace-pre">
           $100-$150
         </p>
@@ -865,8 +855,8 @@ function Container12() {
 function Container13() {
   return (
     <div
-      className="absolute content-stretch flex gap-[16px] h-[20px] items-center left-[99px] top-[297px] w-[341.328px]"
-      data-name="Container"
+      className="absolute content-stretch flex gap-[16px] h-[20px] items-center left-[99px] top-[284px] w-[341.328px]"
+      data-name="Container" style={{ top: '300px' }}
     >
       <Container11 />
       <Container12 />
@@ -900,8 +890,6 @@ function CreativeDrawing() {
       <Container13 />
       <Paragraph2 />
 
-
-
       {/* Main image - rotates on hover */}
       <motion.div
         className="absolute flex items-center justify-center"
@@ -911,7 +899,7 @@ function CreativeDrawing() {
             width: 389,
             height: 226,
             left: 89,
-            top: 50,
+            top: 60,
           },
           hover: {
             width: 416.667,
@@ -1071,7 +1059,6 @@ function Button3() {
       onClick={() => navigate("/course-details")}
       className="absolute bg-[#f30d11] h-[48px] left-0 rounded-[1.67772e+07px] top-0 w-[131px] cursor-pointer"
       data-name="Button"
-
     >
       <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[24px] left-[calc(50%+0.34px)] not-italic text-[16px] text-center text-nowrap text-white top-[calc(50%-12.07px)] tracking-[-0.3125px] translate-x-[-50%] whitespace-pre">{`Explore `}</p>
     </div>
@@ -1280,7 +1267,6 @@ function Container16() {
       data-name="Container"
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border h-[20px] relative w-auto flex items-center">
-
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] ml-[12px] not-italic text-[#6a7282] text-[16px] text-nowrap tracking-[-0.1504px] whitespace-pre">
           $140-$200
         </p>
@@ -1442,8 +1428,6 @@ function SculptureClay() {
         <Container17 />
         <Paragraph3 />
 
-
-
         {/* Main image - rotates on hover */}
         <motion.div
           className="absolute flex items-center justify-center"
@@ -1501,7 +1485,7 @@ function SculptureClay() {
 function Container19() {
   return (
     <div
-      className="absolute h-[226px] left-[73px] overflow-clip rounded-[24px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] top-[71px] w-[389px]"
+      className="absolute h-[226px] left-[73px] overflow-clip rounded-[24px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] top-[60px] w-[389px]"
       data-name="Container"
       style={{
         backgroundImage:
@@ -1648,7 +1632,6 @@ function Container21() {
       data-name="Container"
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border h-[20px] relative w-auto flex items-center">
-
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] ml-[12px] not-italic text-[#6a7282] text-[16px] text-nowrap tracking-[-0.1504px] whitespace-pre">
           $130-$190
         </p>
@@ -1796,13 +1779,11 @@ function WatercolorMagic1() {
       <Container19 />
 
       <div
-        className="absolute h-[268px] left-[73px] top-[295px] w-[389.328px]"
+        className="absolute h-[268px] left-[73px] top-[284px] w-[389.328px]"
         data-name="Container"
       >
         <Container22 />
         <Paragraph4 />
-
-
 
         {/* Main image - rotates on hover */}
         <motion.div
@@ -1861,7 +1842,7 @@ function WatercolorMagic1() {
 function Container24() {
   return (
     <div
-      className="absolute h-[226px] left-[84px] overflow-clip rounded-[24px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] top-[58px] w-[389px]"
+      className="absolute h-[226px] left-[84px] overflow-clip rounded-[24px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] top-[60px] w-[389px]"
       data-name="Container"
       style={{
         backgroundImage:
@@ -2008,7 +1989,6 @@ function Container26() {
       data-name="Container"
     >
       <div className="bg-clip-padding border-0 border-[transparent] border-solid box-border h-[20px] relative w-auto flex items-center">
-
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] ml-[12px] not-italic text-[#6a7282] text-[16px] text-nowrap tracking-[-0.1504px] whitespace-pre">
           $90-$140
         </p>
@@ -2046,7 +2026,7 @@ function Paragraph5() {
 function Container28() {
   return (
     <div
-      className="absolute h-[268px] left-[84px] top-[282px] w-[389.328px]"
+      className="absolute h-[268px] left-[84px] top-[284px] w-[389.328px]"
       data-name="Container"
     >
       <Container27 />
@@ -2066,8 +2046,6 @@ function WatercolorMagic2() {
       <Container24 />
       <Container28 />
 
-
-
       {/* Main image - rotates on hover */}
       <motion.div
         className="absolute flex items-center justify-center"
@@ -2077,7 +2055,7 @@ function WatercolorMagic2() {
             width: 389,
             height: 226,
             left: 84,
-            top: 58,
+            top: 60,
           },
           hover: {
             width: 416.667,
@@ -2184,7 +2162,10 @@ function FeaturedArtPrograms() {
     >
       <Frame />
 
-      <div className="mt-12 flex justify-center" style={{ width: "100%", marginTop: "5rem" }}>
+      <div
+        className="mt-12 flex justify-center"
+        style={{ width: "100%", marginTop: "5rem" }}
+      >
         <span
           className="px-5 py-2 rounded-full bg-orange-100 text-orange-600 text-sm font-bold uppercase tracking-wide shadow-sm"
           style={{
@@ -2206,62 +2187,137 @@ function FeaturedArtPrograms() {
         </span>
       </div>
 
-
       {/* Active Course Section */}
-      <div className="flex flex-col items-center gap-8 mt-12 w-full mb-12" style={{
-        display: "flex",              /* flex */
-        flexDirection: "column",     /* flex-col */
-        alignItems: "center",        /* items-center */
-        gap: "2rem",                  /* gap-8 (8 = 2rem) */
-        marginTop: "1rem",           /* mt-12 */
-        marginBottom: "3rem",        /* mb-12 */
-        width: "100%"
-      }}>
-        <div className="flex flex-col items-center gap-3" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem", width: "100%" }}>
-          <h2 className="font-['Montserrat:SemiBold',sans-serif] font-bold text-4xl text-black text-center" style={{ fontSize: "48px", fontWeight: "bold", color: "#000", textAlign: "center" }}>Currently Active Course</h2>
-          <div className="w-24 h-1.5 bg-orange-500 rounded-full" style={{ width: "54px", height: "2px", backgroundColor: "#f30d11", borderRadius: "10px" }}></div>
+      <div
+        className="flex flex-col items-center gap-8 mt-12 w-full mb-12"
+        style={{
+          display: "flex" /* flex */,
+          flexDirection: "column" /* flex-col */,
+          alignItems: "center" /* items-center */,
+          gap: "2rem" /* gap-8 (8 = 2rem) */,
+          marginTop: "1rem" /* mt-12 */,
+          marginBottom: "3rem" /* mb-12 */,
+          width: "100%",
+        }}
+      >
+        <div
+          className="flex flex-col items-center gap-3"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "1rem",
+            width: "100%",
+          }}
+        >
+          <h2
+            className="font-['Montserrat:SemiBold',sans-serif] font-bold text-4xl text-black text-center"
+            style={{
+              fontSize: "48px",
+              fontWeight: "bold",
+              color: "#000",
+              textAlign: "center",
+            }}
+          >
+            Currently Active Course
+          </h2>
+          <div
+            className="w-24 h-1.5 bg-orange-500 rounded-full"
+            style={{
+              width: "54px",
+              height: "2px",
+              backgroundColor: "#f30d11",
+              borderRadius: "10px",
+            }}
+          ></div>
         </div>
         <PaintingEssentials />
       </div>
 
       {/* Upcoming Courses Section */}
-      <div className="flex flex-col items-center gap-12 w-full my-12" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "3rem", width: "100%" }}>
-        <div className="flex flex-col items-center gap-3" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem", width: "100%" }}>
-          <h2 className="font-['Montserrat:SemiBold',sans-serif] font-bold text-4xl text-black text-center" style={{ fontSize: "48px", fontWeight: "bold", color: "#000", textAlign: "center" }}>Upcoming Courses</h2>
-          <div className="w-24 h-1.5 bg-orange-500 rounded-full" style={{ width: "54px", height: "2px", backgroundColor: "#f30d11", borderRadius: "10px" }}></div>
+      <div
+        className="flex flex-col items-center gap-12 w-full my-12"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "3rem",
+          width: "100%",
+        }}
+      >
+        <div
+          className="flex flex-col items-center gap-3"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "1rem",
+            width: "100%",
+          }}
+        >
+          <h2
+            className="font-['Montserrat:SemiBold',sans-serif] font-bold text-4xl text-black text-center"
+            style={{
+              fontSize: "48px",
+              fontWeight: "bold",
+              color: "#000",
+              textAlign: "center",
+            }}
+          >
+            Upcoming Courses
+          </h2>
+          <div
+            className="w-24 h-1.5 bg-orange-500 rounded-full"
+            style={{
+              width: "54px",
+              height: "2px",
+              backgroundColor: "#f30d11",
+              borderRadius: "10px",
+            }}
+          ></div>
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-x-4 w-full px-4 max-w-[1400px] justify-items-center" style={
-          {
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 w-full px-4 max-w-[1400px] justify-items-center"
+          style={{
             display: "grid",
-            gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-            /* gap-y-12 */
-            columnGap: "0.5rem",/* gap-x-4 */
+            gridTemplateColumns: "repeat(auto-fit, minmax(390px, 1fr))",
+            columnGap: "1rem",
+            rowGap: "2rem",
             width: "100%",
             paddingLeft: "1rem",
             paddingRight: "1rem",
             maxWidth: "1400px",
-            justifyItems: "center"
-          }
-        }>
-          <div className="w-[390px] h-[350px] flex justify-center items-start overflow-visible">
-            <div className="origin-top"><SculptureClay /></div>
+            justifyItems: "center",
+          }}
+        >
+          <div className="w-[390px] h-[400px] flex justify-center items-start overflow-visible">
+            <div className="origin-top ml-[-81px]">
+              <SculptureClay />
+            </div>
           </div>
-          <div className="w-[390px] h-[350px] flex justify-center items-start overflow-visible">
-            <div className="origin-top"><WatercolorMagic /></div>
+          <div className="w-[390px] h-[400px] flex justify-center items-start overflow-visible">
+            <div className="origin-top ml-[-100px]">
+              <WatercolorMagic />
+            </div>
           </div>
-          <div className="w-[390px] h-[350px] flex justify-center items-start overflow-visible">
-            <div className="origin-top"><CreativeDrawing /></div>
+          <div className="w-[390px] h-[400px] flex justify-center items-start overflow-visible">
+            <div className="origin-top ml-[-89px]">
+              <CreativeDrawing />
+            </div>
           </div>
-          <div className="w-[390px] h-[350px] flex justify-center items-start overflow-visible">
-            <div className="origin-top"><WatercolorMagic1 /></div>
+          <div className="w-[390px] h-[400px] flex justify-center items-start overflow-visible">
+            <div className="origin-top ml-[-73px]">
+              <WatercolorMagic1 />
+            </div>
           </div>
-          <div className="w-[390px] h-[350px] flex justify-center items-start overflow-visible">
-            <div className="origin-top"><WatercolorMagic2 /></div>
+          <div className="w-[390px] h-[400px] flex justify-center items-start overflow-visible">
+            <div className="origin-top ml-[-84px]">
+              <WatercolorMagic2 />
+            </div>
           </div>
-
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 

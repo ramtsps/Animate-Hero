@@ -73,8 +73,18 @@ export function WatercolorMagicCard({
         <motion.div
           className="absolute flex items-center justify-center"
           variants={{
-            normal: { width: 1, height: 1, left: 177, top: 121 },
-            hover: { width: 112, height: 100, left: 10, top: -224 },
+            normal: {
+              width: 1,
+              height: 1,
+              left: 177,
+              top: 121,
+            },
+            hover: {
+              width: 112,
+              height: 100,
+              left: 10,
+              top: -224,
+            },
           }}
           style={
             {
@@ -113,8 +123,18 @@ export function WatercolorMagicCard({
         <motion.div
           className="absolute flex items-center justify-center"
           variants={{
-            normal: { width: 1, height: 1, left: 185, top: 101 },
-            hover: { width: 109, height: 93, left: 283, top: -224 },
+            normal: {
+              width: 1,
+              height: 1,
+              left: 185,
+              top: 101,
+            },
+            hover: {
+              width: 109,
+              height: 93,
+              left: 283,
+              top: -224,
+            },
           }}
           style={
             {
@@ -153,8 +173,18 @@ export function WatercolorMagicCard({
         <motion.div
           className="absolute flex items-center justify-center"
           variants={{
-            normal: { width: 1, height: 1, left: 186, top: 144 },
-            hover: { width: 136, height: 106, left: 256, top: 165 },
+            normal: {
+              width: 1,
+              height: 1,
+              left: 186,
+              top: 144,
+            },
+            hover: {
+              width: 136,
+              height: 106,
+              left: 256,
+              top: 165,
+            },
           }}
           style={
             {
@@ -193,8 +223,18 @@ export function WatercolorMagicCard({
         <motion.div
           className="absolute flex items-center justify-center"
           variants={{
-            normal: { width: 1, height: 1, left: 190, top: 107 },
-            hover: { width: 136, height: 117, left: 10, top: 154 },
+            normal: {
+              width: 1,
+              height: 1,
+              left: 190,
+              top: 107,
+            },
+            hover: {
+              width: 136,
+              height: 117,
+              left: 10,
+              top: 154,
+            },
           }}
           style={
             {
@@ -234,8 +274,18 @@ export function WatercolorMagicCard({
           className="absolute flex items-center justify-center"
           data-name="Watercolor Magic 2"
           variants={{
-            normal: { width: 389, height: 226, left: 0, top: -224 },
-            hover: { width: 406.25, height: 236.125, left: -8.625, top: -229.06 },
+            normal: {
+              width: 389,
+              height: 226,
+              left: 0,
+              top: -224,
+            },
+            hover: {
+              width: 406.25,
+              height: 236.125,
+              left: -8.625,
+              top: -229.06,
+            },
           }}
           style={
             {

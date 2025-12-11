@@ -11,8 +11,13 @@ import ScaleWrapper from "./components/ScaleWrapper";
 import CourseDetails from "./components/CourseDetails";
 import EnrollmentForm from "./components/EnrollmentForm";
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import "./styles/App.css";
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -32,7 +37,6 @@ function Home() {
       <Screen7 />
 
       <Footer />
-
     </ScaleWrapper>
   );
 }

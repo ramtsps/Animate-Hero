@@ -17,7 +17,7 @@ export default function Screen() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end start"]
+    offset: ["start end", "end start"],
   });
 
   // Watercolor parallax - slower, subtle movements for deeper depth
@@ -37,7 +37,10 @@ export default function Screen() {
   const r6 = useTransform(scrollYProgress, [0, 1], [6, -6]);
 
   return (
-    <div className="bg-white relative w-full min-h-screen flex justify-center items-center pt-0 pb-20" data-name="Screen 6">
+    <div
+      className="bg-white relative w-full min-h-screen flex justify-center items-center pt-0 pb-20"
+      data-name="Screen 6"
+    >
       <div className=" w-[1728px] h-[1200px]" ref={ref}>
         {/* Watercolor 2 1 - gentle floating */}
         <motion.div
@@ -45,7 +48,11 @@ export default function Screen() {
           data-name="watercolor 2 1"
           style={{ y: y1, x: x1 }}
         >
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-[0.66] pointer-events-none size-full" src={imgWatercolor21} />
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-[0.66] pointer-events-none size-full"
+            src={imgWatercolor21}
+          />
         </motion.div>
 
         {/* Watercolor 3 1 - gentle floating */}
@@ -54,7 +61,11 @@ export default function Screen() {
           data-name="watercolor 3 1"
           style={{ y: y2, x: x2 }}
         >
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-50 pointer-events-none size-full" src={imgWatercolor31} />
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-50 pointer-events-none size-full"
+            src={imgWatercolor31}
+          />
         </motion.div>
 
         {/* Watercolor 5 - gentle floating */}
@@ -63,7 +74,11 @@ export default function Screen() {
           data-name="watercolor 5"
           style={{ y: y3, x: x3 }}
         >
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-50 pointer-events-none size-full" src={imgWatercolor5} />
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-50 pointer-events-none size-full"
+            src={imgWatercolor5}
+          />
         </motion.div>
 
         {/* Leaf 2 1 - floating animation */}
@@ -82,7 +97,11 @@ export default function Screen() {
             delay: 0.5,
           }}
         >
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-40 pointer-events-none size-full" src={imgLeaf21} />
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-40 pointer-events-none size-full"
+            src={imgLeaf21}
+          />
         </motion.div>
 
         {/* Frame 1 1 - subtle parallax */}
@@ -91,7 +110,11 @@ export default function Screen() {
           data-name="frame 1 1"
           style={{ y: y4, rotate: r4 }}
         >
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgFrame11} />
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+            src={imgFrame11}
+          />
         </motion.div>
 
         {/* Frame 2 1 - subtle parallax */}
@@ -100,7 +123,11 @@ export default function Screen() {
           data-name="frame 2 1"
           style={{ y: y5, rotate: r5 }}
         >
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgFrame21} />
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+            src={imgFrame21}
+          />
         </motion.div>
 
         {/* Frame 3 1 - subtle parallax */}
@@ -109,10 +136,21 @@ export default function Screen() {
           data-name="frame 3 1"
           style={{ y: y6, rotate: r6 }}
         >
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgFrame31} />
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+            src={imgFrame31}
+          />
         </motion.div>
-        <div className="absolute h-[221px] left-[1573px] top-px w-[185px]" data-name="Flower 1">
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-[0.79] pointer-events-none size-full" src={imgFlower1} />
+        <div
+          className="absolute h-[221px] left-[1573px] top-px w-[185px]"
+          data-name="Flower 1"
+        >
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-[0.79] pointer-events-none size-full"
+            src={imgFlower1}
+          />
         </div>
 
         {/* Feather 1 - soft floating */}
@@ -131,7 +169,11 @@ export default function Screen() {
             delay: 1.5,
           }}
         >
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-60 pointer-events-none size-full" src={imgFeather1} />
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-60 pointer-events-none size-full"
+            src={imgFeather1}
+          />
         </motion.div>
 
         {/* Leaf1 1 - soft floating */}
@@ -150,7 +192,11 @@ export default function Screen() {
             delay: 0.8,
           }}
         >
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgLeaf11} />
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+            src={imgLeaf11}
+          />
         </motion.div>
 
         {/* Flower 2 1 - soft floating */}
@@ -169,10 +215,21 @@ export default function Screen() {
             delay: 2.5,
           }}
         >
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-[0.65] pointer-events-none size-full" src={imgFlower21} />
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-[0.65] pointer-events-none size-full"
+            src={imgFlower21}
+          />
         </motion.div>
-        <div className="absolute h-[545px] left-[1526px] top-[420px] w-[523px]" data-name="watercolor 4 1">
-          <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgWatercolor41} />
+        <div
+          className="absolute h-[545px] left-[1526px] top-[420px] w-[523px]"
+          data-name="watercolor 4 1"
+        >
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+            src={imgWatercolor41}
+          />
         </div>
         <div className="absolute font-['Montserrat:SemiBold',sans-serif] font-semibold leading-[127px] left-1/2 text-[64px] text-black text-center text-nowrap top-[346px] translate-x-[-50%] whitespace-pre">
           <p className="mb-0">{`Discover our curated `}</p>
