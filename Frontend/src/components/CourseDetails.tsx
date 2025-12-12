@@ -1,4 +1,4 @@
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, DollarSign, Sparkles } from "lucide-react";
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
@@ -137,6 +137,16 @@ export default function CourseDetails() {
 
                 <div className="flex flex-wrap gap-6 items-center">
                   <div className="flex items-center gap-2">
+                    <div className="w-12 h-12 bg-[#D1E231]/30 rounded-full flex items-center justify-center">
+                      <DollarSign className="w-6 h-6 text-[#101828]" />
+                    </div>
+                    <div>
+                      <div className="text-sm text-[#4a5565]">Course Fee</div>
+                      <div className="text-[#101828]">$120 - $180</div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2">
                     <div className="w-12 h-12 bg-[#FF8559]/20 rounded-full flex items-center justify-center">
                       <svg className="w-6 h-6 text-[#FF8559]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -184,6 +194,104 @@ export default function CourseDetails() {
             </div>
           </div>
 
+          {/* Class Schedule and Location Section */}
+          <section className="mb-16" style={{ marginTop: "40px" }}>
+            <h2 className="text-[#101828] mb-8 font-semibold text-center" style={{ fontSize: "36px" }}>
+              Class Schedule & Locations
+            </h2>
+
+            {/* Info Card */}
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-[#f0f0f0] mb-8 relative overflow-hidden flex flex-row">
+              <div className="flex-1 p-4 flex flex-col justify-center items-center text-center">
+                <p className="text-[#101828] font-bold text-xl mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                  Acrylic classes start January 5th!
+                </p>
+                <p className="text-[#4a5565]" style={{ fontSize: "16px" }}>
+                  Classes begin on Monday, Jan 5th. Each session runs for <span className="text-[#FF8559] font-bold">8 weeks</span>.
+                </p>
+              </div>
+              <div className="w-[10%] bg-[#FFF5F2] rounded-l-full absolute right-0 top-0 bottom-0 h-full"></div>
+            </div>
+
+            {/* Locations */}
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <div className="bg-white p-6 rounded-2xl border border-[#f0f0f0] shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-[#FF8559] rounded-full flex items-center justify-center shrink-0 text-white font-bold text-lg">W</div>
+                  <div>
+                    <h3 className="text-[#101828] font-bold text-lg mb-1">Walpole Location</h3>
+                    <p className="text-[#4a5565] text-sm">501 Centre Lane, 501, Walpole - 02081</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-2xl border border-[#f0f0f0] shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-[#D1E231] rounded-full flex items-center justify-center shrink-0 text-[#101828] font-bold text-lg">M</div>
+                  <div>
+                    <h3 className="text-[#101828] font-bold text-lg mb-1">Medway Location</h3>
+                    <p className="text-[#4a5565] text-sm">57 Ellis Street, Medway – 02053</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Schedule Table */}
+            <div className="bg-white rounded-3xl shadow-lg border border-[#f0f0f0] overflow-hidden mb-8">
+              <div className="overflow-x-auto">
+                <table style={{ width: "100%", borderCollapse: "collapse", minWidth: "800px" }}>
+                  <thead>
+                    <tr style={{ background: "linear-gradient(90deg, #FF8559 0%, #ff7043 100%)" }}>
+                      <th style={{ padding: "20px", color: "white", textAlign: "left", fontWeight: "600", borderBottom: "4px solid #e0e0e0", width: "15%" }}>Day</th>
+                      <th style={{ padding: "20px", color: "white", textAlign: "left", fontWeight: "600", borderBottom: "4px solid #e0e0e0", width: "15%" }}>Location</th>
+                      <th style={{ padding: "20px", color: "white", textAlign: "center", fontWeight: "600", borderBottom: "4px solid #e0e0e0", width: "23%" }}>2:00 PM - 3:30 PM</th>
+                      <th style={{ padding: "20px", color: "white", textAlign: "center", fontWeight: "600", borderBottom: "4px solid #e0e0e0", width: "23%" }}>5:00 PM - 6:00 PM</th>
+                      <th style={{ padding: "20px", color: "white", textAlign: "center", fontWeight: "600", borderBottom: "4px solid #e0e0e0", width: "23%" }}>6:30 PM - 7:45 PM</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style={{ borderBottom: "1px solid #f0f0f0" }}>
+                      <td style={{ padding: "20px", fontWeight: "600", color: "#101828" }}>Monday</td>
+                      <td style={{ padding: "20px", color: "#4a5565" }}>Walpole</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>Age 3 and 4</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>Age 5 and 6</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>Age 7 to 10</td>
+                    </tr>
+                    <tr style={{ borderBottom: "1px solid #f0f0f0", backgroundColor: "#fafafa" }}>
+                      <td style={{ padding: "20px", fontWeight: "600", color: "#101828" }}>Tuesday</td>
+                      <td style={{ padding: "20px", color: "#4a5565" }}>Medway</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#9aa2b1" }}>-</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>Age 5 and 6</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>Age 7 to 10</td>
+                    </tr>
+                    <tr style={{ borderBottom: "1px solid #f0f0f0" }}>
+                      <td style={{ padding: "20px", fontWeight: "600", color: "#101828" }}>Wednesday</td>
+                      <td style={{ padding: "20px", color: "#4a5565" }}>Walpole</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>Age 3 and 4</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>Age 11 to 15+</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>Age 11 to 15+</td>
+                    </tr>
+                    <tr style={{ borderBottom: "1px solid #f0f0f0", backgroundColor: "#fafafa" }}>
+                      <td style={{ padding: "20px", fontWeight: "600", color: "#101828" }}>Thursday</td>
+                      <td style={{ padding: "20px", color: "#4a5565" }}>Medway</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#9aa2b1" }}>-</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>Age 11 to 15+</td>
+                      <td style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>Age 11 to 15+</td>
+                    </tr>
+                    <tr style={{ borderBottom: "1px solid #f0f0f0" }}>
+                      <td style={{ padding: "20px", fontWeight: "600", color: "#101828" }}>Fri, Sat & Sun</td>
+                      <td style={{ padding: "20px", color: "#101828", fontWeight: "600" }}>Paint Party</td>
+                      <td colSpan={3} style={{ padding: "20px", textAlign: "center", color: "#4a5565" }}>
+                        Starts at <span className="font-bold text-[#000000]">$350</span> per booking (up to 10 guests) - <span className="italic">Anytime</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+
+          </section>
+
           {/* Continuous Scrolling Photo Gallery */}
           <section className="mb-16 overflow-hidden">
             <h2 className="text-[#101828] mb-8 font-semibold text-center" style={{ fontSize: "36px" }}>
@@ -203,53 +311,53 @@ export default function CourseDetails() {
                 }}
               >
                 {/* First set of images */}
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto1}
                   alt="Student painting in art class"
                 />
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto2}
                   alt="Kids showing their artwork"
                 />
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto3}
                   alt="Student working on painting"
                 />
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto4}
                   alt="Students painting together"
                 />
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto1}
                   alt="Student painting in art class"
                 />
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto2}
                   alt="Kids showing their artwork"
                 />
-                
+
                 {/* Duplicate set for seamless loop */}
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto3}
                   alt="Student working on painting"
                 />
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto4}
                   alt="Students painting together"
                 />
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto1}
                   alt="Student painting in art class"
                 />
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto2}
                   alt="Kids showing their artwork"
                 />
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto3}
                   alt="Student working on painting"
                 />
-                <ScrollingImage 
+                <ScrollingImage
                   src={classPhoto4}
                   alt="Students painting together"
                 />
@@ -290,6 +398,31 @@ export default function CourseDetails() {
                 <MaterialItem text="Apron or old shirt" />
                 <MaterialItem text="Masking tape" />
                 <MaterialItem text="Sponge or toothbrush for texture" />
+              </div>
+            </div>
+          </section>
+
+          {/* Payment Details */}
+          <section className="mb-16">
+            <h2 className="text-[#101828] mb-8 font-semibold" style={{ fontSize: "36px" }}>Payment Details</h2>
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-[#f0f0f0] flex flex-col items-center text-center">
+              <div className="bg-gradient-to-r from-[#FF8559] to-[#ff7043] rounded-2xl p-8 text-white max-w-2xl w-full shadow-lg">
+                <Sparkles className="w-8 h-8 mx-auto mb-4" />
+                <p className="font-['Montserrat:Regular',sans-serif] text-xl mb-3">Ready to Start Your Art Journey?</p>
+                <p className="text-lg opacity-95 mb-2 font-['Montserrat:Regular',sans-serif]">
+                  Course Fee: <span className="font-bold">$120 - $180</span>
+                </p>
+                <p className="text-lg opacity-95 mb-6 font-['Montserrat:Regular',sans-serif]">
+                  To clear your payment, please Zelle to the number below:
+                </p>
+                <div className="bg-white/20 backdrop-blur-sm rounded-xl py-4 px-6 inline-block">
+                  <div className="flex items-center justify-center gap-3">
+                    <ZelleIcon className="w-6 h-6" />
+                    <p className="text-2xl font-bold">
+                      617-639-6666
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -459,11 +592,20 @@ function SparkleIcon() {
 function ScrollingImage({ src, alt }: { src: string, alt: string }) {
   return (
     <div className="relative shrink-0 w-80 h-80 rounded-2xl shadow-lg overflow-hidden border-4 border-white hover:scale-105 transition-transform">
-      <img 
-        src={src} 
+      <img
+        src={src}
         alt={alt}
         className="w-full h-full object-cover"
       />
     </div>
+  );
+}
+
+function ZelleIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+      <path d="M8 8H16L8 16H16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }

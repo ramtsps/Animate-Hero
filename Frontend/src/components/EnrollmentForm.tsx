@@ -1,4 +1,4 @@
-import { ArrowLeft, Sparkles, Heart, Palette, Mail, Phone, CheckCircle2, Star, X } from "lucide-react";
+import { ArrowLeft, Sparkles, Heart, Palette, Mail, CheckCircle2, Star, X } from "lucide-react";
 import { useState } from "react";
 import Footer from "../imports/Footer";
 import imgTigerCalligraphy11Sid177 from "../assets/4307a49e690f6e0d5b4cc3f5e241fcaa2617c523.png";
@@ -50,6 +50,7 @@ export default function EnrollmentForm() {
       "photoPermission",
       "language",
       "email",
+      "zelleTransactionId",
     ];
 
     requiredFields.forEach((field) => {
@@ -374,13 +375,14 @@ export default function EnrollmentForm() {
                     error={errors.language}
                   />
 
-                  {/* Zelle Transaction ID (optional) */}
+                  {/* Zelle Transaction ID */}
                   <FormField
                     label="Zelle Transaction ID"
                     name="zelleTransactionId"
                     value={formData.zelleTransactionId}
                     onChange={handleChange}
-                    required={false}
+                    required={true}
+                    error={errors.zelleTransactionId}
                   />
                 </div>
 
@@ -516,12 +518,15 @@ export default function EnrollmentForm() {
                     <div className="bg-gradient-to-r from-[#FF8559] to-[#ff7043] rounded-2xl p-6 text-white text-center shadow-lg">
                       <Sparkles className="w-6 h-6 mx-auto mb-3" />
                       <p className="font-['Montserrat:Regular',sans-serif] text-lg mb-2">Ready to Sign Up?</p>
+                      <p className="text-base opacity-90 mb-2 font-['Montserrat:Regular',sans-serif]">
+                        Course Fee: <span className="font-bold">$120 - $180</span>
+                      </p>
                       <p className="text-base opacity-90 mb-3 font-['Montserrat:Regular',sans-serif]">
                         Please fill out the form and Zelle to my number
                       </p>
                       <div className="bg-white/20 backdrop-blur-sm rounded-xl py-3 px-4">
                         <div className="flex items-center justify-center gap-2">
-                          <Phone className="w-5 h-5" />
+                          <ZelleIcon className="w-5 h-5" />
                           <p className="text-xl font-bold">
                             617-639-6666
                           </p>
@@ -572,5 +577,14 @@ function FormField({
           } focus:outline-none focus:border-[#FF8559] transition-colors font-['Montserrat:Regular',sans-serif]`}
       />
     </div>
+  );
+}
+
+function ZelleIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+      <path d="M8 8H16L8 16H16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }

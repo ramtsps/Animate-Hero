@@ -34,7 +34,7 @@ export default function Programs() {
                 <div className="absolute right-[120px] bottom-[50px] w-[120px] h-[120px] bg-[#FF8559] rounded-full opacity-30" />
 
                 {/* Hero Title */}
-                <div className="text-center w-full flex flex-col items-center justify-center  max-w-[900px] px-8 relative z-10" style={{ paddingBottom: "20px", height: "100vh" }}>
+                <div className="text-center w-full flex flex-col items-center   max-w-[900px] px-8 relative z-10" style={{ paddingBottom: "20px", height: "100vh", marginTop: "100px" }}>
                     <motion.h1
                         className="font-['Kaushan_Script:Regular',sans-serif] text-[96px] text-[#101828] "
                         initial={{ opacity: 0, y: 20 }}
